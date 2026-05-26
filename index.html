@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    *, *::before, *::after { box-sizing: bordher-box; margin: 0; padding: 0; }
     :root {
       --black:       #0A0805;
       --black-mid:   #141008;
@@ -66,7 +66,7 @@
       justify-content: space-between; height: 72px;
       position: sticky; top: 0; z-index: 100;
     }
-    .gc-nav-logo img { height: 50px; width: auto; display: block; }
+    .gc-nav-logo img { height: 80px; width: auto; display: block; }
     .gc-nav-links { display: flex; gap: 2.5rem; align-items: center; }
     .gc-nav-links a {
       font-size: 10px; color: var(--cream-dim); text-decoration: none;
@@ -956,8 +956,8 @@
         </div>
         <div class="gc-footer-col">
           <h5>Legale</h5>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Cookie Policy</a>
+          <a href="/privacy-policy">Privacy Policy</a>
+          <a href="/cookie-policy">Cookie Policy</a>
           <a href="https://www.lovenezia.com" target="_blank" class="lv-link">LoVenezia →</a>
         </div>
         <div class="gc-footer-col">
@@ -979,6 +979,42 @@
     window.addEventListener('scroll', () => {
       bar.classList.toggle('visible', window.scrollY > window.innerHeight * 0.55);
     }, { passive: true });
+  </script>
+
+
+  <!-- ── COOKIE BANNER ──────────────────────────── -->
+  <div id="gc-cookie-bar" style="display:none; position:fixed; bottom:0; left:0; right:0; z-index:9999;
+    background:#1A1408; border-top:1px solid #7A5818; padding:16px 3rem;
+    display:flex; align-items:center; justify-content:space-between; gap:1rem; flex-wrap:wrap;">
+    <p style="font-size:12px; color:#C8BCA0; margin:0; max-width:700px; line-height:1.6;">
+      Utilizziamo cookie tecnici e, previo tuo consenso, cookie di profilazione per migliorare la tua esperienza.
+      Puoi leggere la nostra <a href="/privacy-policy" style="color:#C9973A; text-decoration:underline;">Privacy Policy</a>
+      e la <a href="/cookie-policy" style="color:#C9973A; text-decoration:underline;">Cookie Policy</a>.
+    </p>
+    <div style="display:flex; gap:10px; flex-shrink:0;">
+      <button onclick="gcCookieReject()" style="font-size:10px; background:transparent; color:#C8BCA0;
+        padding:9px 18px; letter-spacing:2px; text-transform:uppercase; border:1px solid #7A5818;
+        cursor:pointer; font-family:'Jost',sans-serif; font-weight:400; transition:all 0.2s;">Rifiuta</button>
+      <button onclick="gcCookieAccept()" style="font-size:10px; background:#C9973A; color:#0A0805;
+        padding:9px 20px; letter-spacing:2px; text-transform:uppercase; border:none;
+        cursor:pointer; font-family:'Jost',sans-serif; font-weight:500; transition:background 0.2s;">Accetta</button>
+    </div>
+  </div>
+  <script>
+    (function() {
+      var bar = document.getElementById('gc-cookie-bar');
+      if (!localStorage.getItem('gc_cookie_consent')) {
+        bar.style.display = 'flex';
+      }
+    })();
+    function gcCookieAccept() {
+      localStorage.setItem('gc_cookie_consent', 'accepted');
+      document.getElementById('gc-cookie-bar').style.display = 'none';
+    }
+    function gcCookieReject() {
+      localStorage.setItem('gc_cookie_consent', 'rejected');
+      document.getElementById('gc-cookie-bar').style.display = 'none';
+    }
   </script>
 
 </body>
