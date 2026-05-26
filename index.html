@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gemma Consulenze — Riduciamo i tuoi costi aziendali</title>
+  <title>Gemma Consulenze — Riduco i tuoi costi aziendali</title>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
   <style>
@@ -63,10 +63,10 @@
       background: rgba(10,8,5,0.96); backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border-mid);
       padding: 0 3rem; display: flex; align-items: center;
-      justify-content: space-between; height: 72px;
+      justify-content: space-between; height: 96px;
       position: sticky; top: 0; z-index: 100;
     }
-    .gc-nav-logo img { height: 80px; width: auto; display: block; }
+    .gc-nav-logo img { height: 100px; width: auto; display: block; filter: drop-shadow(0 0 10px rgba(201,151,58,0.2)); }
     .gc-nav-links { display: flex; gap: 2.5rem; align-items: center; }
     .gc-nav-links a {
       font-size: 10px; color: var(--cream-dim); text-decoration: none;
@@ -85,7 +85,7 @@
 
     /* ─── HERO ───────────────────────────────────── */
     .gc-hero {
-      min-height: calc(100vh - 72px); background: var(--black);
+      min-height: calc(100vh - 96px); background: var(--black);
       padding: 5rem 3rem; display: grid;
       grid-template-columns: 1.15fr 0.85fr; gap: 5rem;
       align-items: center; position: relative; overflow: hidden;
@@ -850,7 +850,7 @@
         <span class="gc-lv-pill">Progetto editoriale</span>
       </div>
       <div class="gc-lv-tagline">Venezia raccontata come merita — da chi la conosce davvero.</div>
-      <p class="gc-lv-text">Gemma Consulenze è la realtà che sostiene e sviluppa LoVenezia — progetto editoriale dedicato al racconto della Venezia autentica, costruito in oltre dieci anni di lavoro fotografico e narrativo. Una community qualificata di persone che amano e scelgono Venezia, seguita da hotel, ristoranti e operatori del territorio.</p>
+      <p class="gc-lv-text">Gemma Consulenze è il progetto che sostiene e sviluppa LoVenezia — progetto editoriale dedicato al racconto della Venezia autentica, costruito in oltre dieci anni di lavoro fotografico e narrativo. Una community qualificata di persone che amano e scelgono Venezia, seguita da hotel, ristoranti e operatori del territorio.</p>
 
       <div class="gc-stats">
         <div class="gc-stat"><div class="gc-stat-n">110K+</div><div class="gc-stat-l">Follower totali</div></div>
@@ -863,7 +863,7 @@
       <!-- VANTAGGIO VENEZIA -->
       <div style="margin:2.5rem 0 0;padding-top:2.5rem;border-top:1px solid var(--border-mid);">
         <div style="font-size:9px;color:var(--crimson);letter-spacing:3px;text-transform:uppercase;font-weight:400;margin-bottom:1rem;">Solo per le strutture del territorio veneziano</div>
-        <p style="font-size:14px;color:var(--cream);font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;line-height:1.6;margin-bottom:2rem;">Per chi opera a Venezia e in laguna, Gemma Consulenze offre qualcosa che nessun'altra consulenza può dare: l'accesso diretto alla piattaforma e al network di LoVenezia.</p>
+        <p style="font-size:14px;color:var(--cream);font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;line-height:1.6;margin-bottom:2rem;">Per chi opera a Venezia e in laguna, offro qualcosa che nessun'altra consulenza può dare: l'accesso diretto alla piattaforma e al network di LoVenezia.</p>
 
         <div class="gc-lv-values">
           <div class="gc-lv-value">
@@ -879,7 +879,7 @@
           <div class="gc-lv-value">
             <i class="ti ti-network"></i>
             <h4>Network &amp; autorevolezza</h4>
-            <p>Dieci anni di relazioni nell'hospitality veneziano. Quando Gemma tratta con un fornitore del territorio, non è un consulente anonimo — è un nome conosciuto e rispettato.</p>
+            <p>Dieci anni di relazioni nell'hospitality veneziano. Quando tratto con un fornitore del territorio, non sono un consulente anonimo — sono un nome conosciuto e rispettato.</p>
           </div>
         </div>
       </div>
@@ -956,8 +956,8 @@
         </div>
         <div class="gc-footer-col">
           <h5>Legale</h5>
-          <a href="/privacy-policy">Privacy Policy</a>
-          <a href="/cookie-policy">Cookie Policy</a>
+          <a href="#privacy-policy" onclick="showLegal('page-privacy'); return false;">Privacy Policy</a>
+          <a href="#cookie-policy" onclick="showLegal('page-cookie'); return false;">Cookie Policy</a>
           <a href="https://www.lovenezia.com" target="_blank" class="lv-link">LoVenezia →</a>
         </div>
         <div class="gc-footer-col">
@@ -988,8 +988,8 @@
     display:flex; align-items:center; justify-content:space-between; gap:1rem; flex-wrap:wrap;">
     <p style="font-size:12px; color:#C8BCA0; margin:0; max-width:700px; line-height:1.6;">
       Utilizziamo cookie tecnici e, previo tuo consenso, cookie di profilazione per migliorare la tua esperienza.
-      Puoi leggere la nostra <a href="/privacy-policy" style="color:#C9973A; text-decoration:underline;">Privacy Policy</a>
-      e la <a href="/cookie-policy" style="color:#C9973A; text-decoration:underline;">Cookie Policy</a>.
+      Puoi leggere la nostra <a href="#privacy-policy" onclick="showLegal('page-privacy'); return false;" style="color:#C9973A; text-decoration:underline;">Privacy Policy</a>
+      e la <a href="#cookie-policy" onclick="showLegal('page-cookie'); return false;" style="color:#C9973A; text-decoration:underline;">Cookie Policy</a>.
     </p>
     <div style="display:flex; gap:10px; flex-shrink:0;">
       <button onclick="gcCookieReject()" style="font-size:10px; background:transparent; color:#C8BCA0;
@@ -1017,5 +1017,160 @@
     }
   </script>
 
+
+  <!-- ══════════════════════════════════════════════
+       PAGINE LEGALI: PRIVACY POLICY & COOKIE POLICY
+  ══════════════════════════════════════════════ -->
+
+  <!-- PRIVACY POLICY PAGE -->
+  <div id="page-privacy" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; z-index:8000;
+    background:#0A0805; overflow-y:auto; padding:4rem 2rem;">
+    <div style="max-width:760px; margin:0 auto;">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:3rem; padding-bottom:1.5rem; border-bottom:1px solid #2E2410;">
+        <a href="/" onclick="hideLegal('page-privacy'); return false;"
+          style="font-size:10px; color:#C9973A; letter-spacing:2px; text-transform:uppercase; text-decoration:none;">← Torna al sito</a>
+        <img src="https://i.ibb.co/wZ6K6Kw/Progetto-senza-titolo-24.png" alt="Gemma Consulenze" style="height:55px;">
+      </div>
+      <h1 style="font-family:'Cormorant Garamond',serif; font-size:clamp(28px,3vw,42px); font-weight:300; color:#F2EBD9; margin-bottom:0.5rem; font-style:italic;">Privacy Policy</h1>
+      <p style="font-size:11px; color:#7A5818; letter-spacing:2px; text-transform:uppercase; margin-bottom:2.5rem;">Ultimo aggiornamento: maggio 2026</p>
+
+      <div style="font-size:14px; color:#C8BCA0; line-height:1.9;">
+        <h2 style="font-size:16px; color:#C9973A; font-family:'Jost',sans-serif; font-weight:400; letter-spacing:1.5px; text-transform:uppercase; margin:2rem 0 0.75rem;">1. Titolare del Trattamento</h2>
+        <p>Il titolare del trattamento dei dati personali è <strong style="color:#F2EBD9;">Diego Porceddu</strong>, libero professionista con P.IVA 05070270235, operante con il marchio Gemma Consulenze.<br>
+        Email: <a href="mailto:info@gemmaconsulenze.com" style="color:#C9973A;">info@gemmaconsulenze.com</a><br>
+        Tel: <a href="tel:+393247972328" style="color:#C9973A;">+39 324 797 2328</a></p>
+
+        <h2 style="font-size:16px; color:#C9973A; font-family:'Jost',sans-serif; font-weight:400; letter-spacing:1.5px; text-transform:uppercase; margin:2rem 0 0.75rem;">2. Dati raccolti</h2>
+        <p>Raccolgo i dati personali che mi fornisci volontariamente attraverso il modulo di contatto, la chat WhatsApp o via email. I dati raccolti possono includere: nome e cognome, indirizzo email, numero di telefono, ragione sociale e partita IVA dell'azienda, informazioni sulle esigenze aziendali.</p>
+
+        <h2 style="font-size:16px; color:#C9973A; font-family:'Jost',sans-serif; font-weight:400; letter-spacing:1.5px; text-transform:uppercase; margin:2rem 0 0.75rem;">3. Finalità del trattamento</h2>
+        <p>I dati raccolti sono trattati per le seguenti finalità:</p>
+        <ul style="margin:0.75rem 0 0.75rem 1.5rem; display:flex; flex-direction:column; gap:0.4rem;">
+          <li>Rispondere alle richieste di contatto e preventivo</li>
+          <li>Erogare i servizi di consulenza richiesti</li>
+          <li>Inviare comunicazioni inerenti al rapporto professionale</li>
+          <li>Adempiere agli obblighi di legge (fiscali, contabili)</li>
+        </ul>
+        <p>Non utilizzo i tuoi dati per finalità di marketing senza esplicito consenso.</p>
+
+        <h2 style="font-size:16px; color:#C9973A; font-family:'Jost',sans-serif; font-weight:400; letter-spacing:1.5px; text-transform:uppercase; margin:2rem 0 0.75rem;">4. Base giuridica</h2>
+        <p>Il trattamento si basa su: consenso dell'interessato (art. 6.1.a GDPR), esecuzione di un contratto (art. 6.1.b GDPR), obbligo legale (art. 6.1.c GDPR) e legittimo interesse del titolare (art. 6.1.f GDPR).</p>
+
+        <h2 style="font-size:16px; color:#C9973A; font-family:'Jost',sans-serif; font-weight:400; letter-spacing:1.5px; text-transform:uppercase; margin:2rem 0 0.75rem;">5. Conservazione dei dati</h2>
+        <p>I dati personali sono conservati per il tempo strettamente necessario alle finalità per cui sono stati raccolti. I dati relativi a rapporti contrattuali sono conservati per 10 anni in conformità agli obblighi fiscali. I dati raccolti per rispondere a richieste di contatto sono eliminati entro 24 mesi in assenza di rapporto contrattuale.</p>
+
+        <h2 style="font-size:16px; color:#C9973A; font-family:'Jost',sans-serif; font-weight:400; letter-spacing:1.5px; text-transform:uppercase; margin:2rem 0 0.75rem;">6. Condivisione dei dati</h2>
+        <p>I tuoi dati non vengono venduti né ceduti a terzi. Possono essere condivisi esclusivamente con professionisti che collaborano alla gestione del rapporto professionale (es. commercialista), sempre nel rispetto del GDPR e vincolati da accordi di riservatezza.</p>
+
+        <h2 style="font-size:16px; color:#C9973A; font-family:'Jost',sans-serif; font-weight:400; letter-spacing:1.5px; text-transform:uppercase; margin:2rem 0 0.75rem;">7. Diritti dell'interessato</h2>
+        <p>Hai il diritto di: accedere ai tuoi dati personali, richiederne la rettifica o la cancellazione, opporti al trattamento, richiederne la portabilità, revocare il consenso in qualsiasi momento. Per esercitare questi diritti, scrivimi a <a href="mailto:info@gemmaconsulenze.com" style="color:#C9973A;">info@gemmaconsulenze.com</a>.</p>
+
+        <h2 style="font-size:16px; color:#C9973A; font-family:'Jost',sans-serif; font-weight:400; letter-spacing:1.5px; text-transform:uppercase; margin:2rem 0 0.75rem;">8. Reclami</h2>
+        <p>Hai il diritto di proporre reclamo al Garante per la Protezione dei Dati Personali (www.garanteprivacy.it) qualora ritenga che il trattamento dei tuoi dati violi il GDPR.</p>
+      </div>
+
+      <div style="margin-top:3rem; padding-top:2rem; border-top:1px solid #2E2410; text-align:center;">
+        <a href="/" onclick="hideLegal('page-privacy'); return false;"
+          style="display:inline-block; font-size:10px; background:#C9973A; color:#0A0805; padding:12px 28px; letter-spacing:2px; text-transform:uppercase; text-decoration:none; font-family:'Jost',sans-serif; font-weight:500;">← Torna al sito</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- COOKIE POLICY PAGE -->
+  <div id="page-cookie" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; z-index:8000;
+    background:#0A0805; overflow-y:auto; padding:4rem 2rem;">
+    <div style="max-width:760px; margin:0 auto;">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:3rem; padding-bottom:1.5rem; border-bottom:1px solid #2E2410;">
+        <a href="/" onclick="hideLegal('page-cookie'); return false;"
+          style="font-size:10px; color:#C9973A; letter-spacing:2px; text-transform:uppercase; text-decoration:none;">← Torna al sito</a>
+        <img src="https://i.ibb.co/wZ6K6Kw/Progetto-senza-titolo-24.png" alt="Gemma Consulenze" style="height:55px;">
+      </div>
+      <h1 style="font-family:'Cormorant Garamond',serif; font-size:clamp(28px,3vw,42px); font-weight:300; color:#F2EBD9; margin-bottom:0.5rem; font-style:italic;">Cookie Policy</h1>
+      <p style="font-size:11px; color:#7A5818; letter-spacing:2px; text-transform:uppercase; margin-bottom:2.5rem;">Ultimo aggiornamento: maggio 2026</p>
+
+      <div style="font-size:14px; color:#C8BCA0; line-height:1.9;">
+        <h2 style="font-size:16px; color:#C9973A; font-family:'Jost',sans-serif; font-weight:400; letter-spacing:1.5px; text-transform:uppercase; margin:2rem 0 0.75rem;">Cosa sono i cookie</h2>
+        <p>I cookie sono piccoli file di testo che i siti web visitati dall'utente inviano al terminale, dove vengono memorizzati per essere poi ritrasmessi agli stessi siti alla visita successiva.</p>
+
+        <h2 style="font-size:16px; color:#C9973A; font-family:'Jost',sans-serif; font-weight:400; letter-spacing:1.5px; text-transform:uppercase; margin:2rem 0 0.75rem;">Cookie tecnici (necessari)</h2>
+        <p>Questo sito utilizza cookie tecnici strettamente necessari al funzionamento. Non richiedono consenso e non raccolgono dati personali.</p>
+        <div style="background:#141008; border:1px solid #2E2410; padding:1.25rem; margin:1rem 0; border-radius:2px;">
+          <table style="width:100%; border-collapse:collapse; font-size:13px;">
+            <thead>
+              <tr style="border-bottom:1px solid #2E2410;">
+                <th style="text-align:left; padding:0.5rem; color:#C9973A; font-weight:400;">Nome</th>
+                <th style="text-align:left; padding:0.5rem; color:#C9973A; font-weight:400;">Finalità</th>
+                <th style="text-align:left; padding:0.5rem; color:#C9973A; font-weight:400;">Durata</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom:1px solid #1A1408;">
+                <td style="padding:0.5rem;">gc_cookie_consent</td>
+                <td style="padding:0.5rem;">Memorizza la scelta dell'utente sul consenso cookie</td>
+                <td style="padding:0.5rem;">Persistente (localStorage)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 style="font-size:16px; color:#C9973A; font-family:'Jost',sans-serif; font-weight:400; letter-spacing:1.5px; text-transform:uppercase; margin:2rem 0 0.75rem;">Cookie di terze parti</h2>
+        <p>Questo sito non utilizza cookie di profilazione propri. Possono essere presenti cookie di terze parti legati ai seguenti servizi:</p>
+        <div style="background:#141008; border:1px solid #2E2410; padding:1.25rem; margin:1rem 0; border-radius:2px;">
+          <table style="width:100%; border-collapse:collapse; font-size:13px;">
+            <thead>
+              <tr style="border-bottom:1px solid #2E2410;">
+                <th style="text-align:left; padding:0.5rem; color:#C9973A; font-weight:400;">Servizio</th>
+                <th style="text-align:left; padding:0.5rem; color:#C9973A; font-weight:400;">Finalità</th>
+                <th style="text-align:left; padding:0.5rem; color:#C9973A; font-weight:400;">Privacy</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom:1px solid #1A1408;">
+                <td style="padding:0.5rem;">Google Fonts</td>
+                <td style="padding:0.5rem;">Caricamento font tipografici</td>
+                <td style="padding:0.5rem;"><a href="https://policies.google.com/privacy" style="color:#C9973A;" target="_blank">Google</a></td>
+              </tr>
+              <tr>
+                <td style="padding:0.5rem;">WhatsApp / Meta</td>
+                <td style="padding:0.5rem;">Link di contatto diretto</td>
+                <td style="padding:0.5rem;"><a href="https://www.whatsapp.com/legal/privacy-policy" style="color:#C9973A;" target="_blank">Meta</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 style="font-size:16px; color:#C9973A; font-family:'Jost',sans-serif; font-weight:400; letter-spacing:1.5px; text-transform:uppercase; margin:2rem 0 0.75rem;">Come gestire i cookie</h2>
+        <p>Puoi revocare il consenso ai cookie in qualsiasi momento tramite il banner che appare al primo accesso al sito, oppure cancellando i cookie dal tuo browser. Per maggiori informazioni sulla gestione dei cookie nel browser consulta la guida del tuo browser.</p>
+
+        <h2 style="font-size:16px; color:#C9973A; font-family:'Jost',sans-serif; font-weight:400; letter-spacing:1.5px; text-transform:uppercase; margin:2rem 0 0.75rem;">Titolare del Trattamento</h2>
+        <p>Diego Porceddu · P.IVA 05070270235 · Gemma Consulenze<br>
+        <a href="mailto:info@gemmaconsulenze.com" style="color:#C9973A;">info@gemmaconsulenze.com</a></p>
+      </div>
+
+      <div style="margin-top:3rem; padding-top:2rem; border-top:1px solid #2E2410; text-align:center;">
+        <a href="/" onclick="hideLegal('page-cookie'); return false;"
+          style="display:inline-block; font-size:10px; background:#C9973A; color:#0A0805; padding:12px 28px; letter-spacing:2px; text-transform:uppercase; text-decoration:none; font-family:'Jost',sans-serif; font-weight:500;">← Torna al sito</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showLegal(id) {
+      document.getElementById(id).style.display = 'block';
+      document.body.style.overflow = 'hidden';
+      window.scrollTo(0,0);
+    }
+    function hideLegal(id) {
+      document.getElementById(id).style.display = 'none';
+      document.body.style.overflow = '';
+    }
+    // Gestione URL hash per link diretti
+    function checkHash() {
+      if (window.location.hash === '#privacy-policy') showLegal('page-privacy');
+      else if (window.location.hash === '#cookie-policy') showLegal('page-cookie');
+    }
+    window.addEventListener('hashchange', checkHash);
+    window.addEventListener('DOMContentLoaded', checkHash);
+  </script>
 </body>
 </html>
