@@ -1203,16 +1203,16 @@
       btn.disabled = true;
       btn.textContent = 'Invio in corso…';
 
-     +
-        from_name:  nome + ' ' + cognome,
-        from_email: email,
-        phone:      tel || '—',
-        company:    azienda || '—',
-        sector:     settore || '—',
-        vat:        (document.getElementById('gc-piva')?.value.trim()) || '—',
-        message:    msg,
-        to_email:   'info@gemmaconsulenze.com'
-      })
+     emailjs.send('TUO_SERVICE_ID', 'TUO_TEMPLATE_ID', {
+  from_name:  nome + ' ' + cognome,
+  from_email: email,
+  phone:      tel || '—',
+  company:    azienda || '—',
+  sector:     settore || '—',
+  vat:        (document.getElementById('gc-piva')?.value.trim()) || '—',
+  message:    msg,
+  to_email:   'info@gemmaconsulenze.com'
+})
       .then(function() {
         document.getElementById('gc-form-area').style.display = 'none';
         document.getElementById('gc-form-success').style.display = 'block';
