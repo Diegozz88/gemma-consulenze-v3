@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="data:image/png;base64,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">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gemma Consulenze | Consulente Acquisti e Riduzione Costi — Diego Porceddu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <!-- emailjs init spostato a fondo body -->
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --black:       #0A0805;
+      --black-mid:   #141008;
+      --black-soft:  #1A1408;
+      --black-panel: #111008;
+      --gold:        #C9973A;
+      --gold-light:  #E2B85A;
+      --gold-pale:   #7A5818;
+      --gold-dim:    #3A2808;
+      --crimson:     #8B1A2F;
+      --crimson-soft:#A52038;
+      --cream:       #F2EBD9;
+      --cream-dim:   #C8BCA0;
+      --ink-faint:   #5E5238;
+      --border:      #221A0A;
+      --border-mid:  #2E2410;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      background-image: radial-gradient(rgba(255,255,255,0.012) 1px, transparent 1px);
+      background-size: 24px 24px;
+      font-family: 'Jost', sans-serif; background: var(--black); color: var(--cream); font-weight: 300; overflow-x: hidden; }
+
+    /* ─── STICKY BAR ─────────────────────────────── */
+    .gc-sticky {
+      position: fixed; bottom: 0; left: 0; right: 0; z-index: 200;
+      background: rgba(10,8,5,0.97); border-top: 1px solid var(--gold-pale);
+      backdrop-filter: blur(16px);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 12px 3rem; gap: 1rem;
+      transform: translateY(100%);
+      opacity: 0;
+      transition: transform 0.5s cubic-bezier(0.22,1,0.36,1), opacity 0.5s ease;
+    }
+    .gc-sticky.visible { transform: translateY(0); opacity: 1; }
+    .gc-sticky-text { font-size: 12px; color: var(--cream-dim); }
+    .gc-sticky-text strong { color: var(--gold); font-weight: 400; }
+    .gc-sticky-actions { display: flex; gap: 1rem; align-items: center; }
+    .btn-wa-sm {
+      display: flex; align-items: center; gap: 7px;
+      background: #25D366; color: #000; font-size: 10px;
+      font-family: 'Jost', sans-serif; font-weight: 500;
+      letter-spacing: 1.5px; text-transform: uppercase;
+      padding: 10px 18px; border: none; cursor: pointer;
+      text-decoration: none; transition: background 0.2s;
+    }
+    .btn-wa-sm:hover { background: #1ebe57; }
+    .btn-gold-sm {
+      font-size: 10px; background: var(--gold); color: var(--black);
+      padding: 10px 20px; letter-spacing: 2px; text-transform: uppercase;
+      border: none; cursor: pointer; font-family: 'Jost', sans-serif;
+      font-weight: 500; transition: background 0.2s;
+    }
+    .btn-gold-sm:hover { background: var(--gold-light); }
+
+    /* ─── NAV ────────────────────────────────────── */
+    nav.gc-nav {
+      background: rgba(10,8,5,0.96); backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-mid);
+      padding: 0 3rem; display: flex; align-items: center;
+      justify-content: space-between; height: 72px;
+      position: sticky; top: 0; z-index: 100;
+    }
+    .gc-nav-logo img { height: 50px; width: auto; display: block; }
+    .gc-nav-links { display: flex; gap: 2.5rem; align-items: center; }
+    .gc-nav-links a {
+      font-size: 10px; color: var(--cream-dim); text-decoration: none;
+      letter-spacing: 2.5px; text-transform: uppercase; font-weight: 400;
+      transition: color 0.2s;
+    }
+    .gc-nav-links a:hover { color: var(--gold); }
+    .gc-nav-cta {
+      color: var(--gold) !important; border: 1px solid var(--gold-pale);
+      padding: 9px 22px; transition: all 0.25s !important;
+    }
+    .gc-nav-cta:hover {
+      background: var(--gold) !important; color: var(--black) !important;
+      border-color: var(--gold) !important;
+    }
+
+    /* ─── HERO ───────────────────────────────────── */
+    .gc-hero {
+      min-height: calc(100vh - 72px); background: var(--black);
+      padding: 5rem 3rem; display: grid;
+      grid-template-columns: 1.15fr 0.85fr; gap: 5rem;
+      align-items: center; position: relative; overflow: hidden;
+    }
+    .gc-hero::before {
+      content: ''; position: absolute; top: -20%; right: -10%;
+      width: 55vw; height: 55vw; border-radius: 50%;
+      background: radial-gradient(circle, rgba(201,151,58,0.055) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .gc-hero::after {
+      content: ''; position: absolute; bottom: -15%; left: -8%;
+      width: 35vw; height: 35vw; border-radius: 50%;
+      background: radial-gradient(circle, rgba(139,26,47,0.07) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .gc-hero-eyebrow {
+      font-size: 9px; color: var(--gold); letter-spacing: 3px;
+      text-transform: uppercase; margin-bottom: 1.5rem; font-weight: 400;
+    }
+    .gc-hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(34px, 3.8vw, 52px);
+      font-weight: 300; color: var(--cream); line-height: 1.2; font-style: italic;
+    }
+    .gc-hero h1 em { color: var(--gold); font-style: italic; }
+
+    /* KILLER LINE */
+    .gc-killer {
+      margin-top: 1.75rem; padding: 1.5rem 1.75rem;
+      background: var(--black-soft); border-left: 2px solid var(--crimson);
+    }
+    .gc-killer p {
+      font-size: 15px; color: var(--cream); line-height: 1.7; font-weight: 300;
+    }
+    .gc-killer strong { color: var(--gold); font-weight: 400; }
+
+    .gc-hero-rule { width: 52px; height: 1px; background: var(--gold); margin: 2rem 0; opacity: 0.5; }
+    .gc-hero-sub {
+      font-size: 14px; color: var(--cream-dim); line-height: 1.9;
+      margin-bottom: 2.5rem; font-weight: 300; max-width: 500px;
+    }
+    .gc-hero-actions { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; }
+
+    /* BUTTONS */
+    .btn-gold {
+      font-size: 10px; background: var(--gold); color: var(--black);
+      padding: 14px 30px; letter-spacing: 2.5px; text-transform: uppercase;
+      border: none; cursor: pointer; font-family: 'Jost', sans-serif;
+      font-weight: 500; transition: background 0.2s; display: inline-block;
+      text-decoration: none;
+    }
+    .btn-gold:hover { background: var(--gold-light); }
+    .btn-wa {
+      display: flex; align-items: center; gap: 8px;
+      background: none; border: 1px solid rgba(37,211,102,0.5);
+      color: #25D366; font-size: 10px; font-family: 'Jost', sans-serif;
+      font-weight: 400; padding: 13px 22px; letter-spacing: 2px;
+      text-transform: uppercase; cursor: pointer;
+      text-decoration: none; transition: all 0.2s;
+    }
+    .btn-wa:hover { background: #25D366; color: #000; border-color: #25D366; }
+    .btn-wa i { font-size: 15px; }
+    .btn-outline {
+      font-size: 10px; color: var(--cream-dim); letter-spacing: 2.5px;
+      text-transform: uppercase; background: none;
+      border: 1px solid var(--border-mid); padding: 13px 22px;
+      cursor: pointer; font-family: 'Jost', sans-serif;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .btn-outline:hover { border-color: var(--gold-pale); color: var(--gold); }
+
+    /* HERO RIGHT */
+    .gc-hero-right {
+      padding-left: 3rem; border-left: 1px solid var(--border-mid);
+      position: relative; z-index: 1;
+    }
+    .gc-trust-badge {
+      background: var(--black-panel); border: 1px solid var(--gold-pale);
+      padding: 1.5rem; margin-bottom: 2rem; text-align: center;
+    }
+    .gc-trust-badge .badge-icon { font-size: 26px; color: var(--gold); margin-bottom: 0.5rem; }
+    .gc-trust-badge strong {
+      display: block; font-family: 'Cormorant Garamond', serif;
+      font-size: 15px; color: var(--gold); font-style: italic;
+      margin-bottom: 4px; font-weight: 400;
+    }
+    .gc-trust-badge p { font-size: 11px; color: var(--cream-dim); line-height: 1.65; }
+    .gc-hero-stat { margin-bottom: 1.75rem; }
+    .gc-hero-stat-n {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 42px; color: var(--gold); font-weight: 300; line-height: 1;
+    }
+    .gc-hero-stat-l { font-size: 11px; color: var(--ink-faint); letter-spacing: 0.5px; margin-top: 5px; line-height: 1.6; }
+    .gc-hero-rule-sm { width: 28px; height: 1px; background: var(--border-mid); margin: 1.5rem 0; }
+
+    /* ─── POSIZIONE ──────────────────────────────── */
+    .gc-position-bar {
+      background: var(--black-panel); border-bottom: 1px solid var(--border-mid);
+      padding: 2.25rem 3rem; text-align: center;
+    }
+    .gc-position-bar p {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(17px, 2vw, 22px); color: var(--cream);
+      font-style: italic; font-weight: 300; line-height: 1.6;
+    }
+    .gc-position-bar p em { color: var(--gold); font-style: italic; }
+    .gc-position-bar small {
+      display: block; font-family: 'Jost', sans-serif;
+      font-size: 10px; color: var(--ink-faint);
+      letter-spacing: 2.5px; text-transform: uppercase;
+      margin-top: 0.75rem;
+    }
+
+    /* ─── TRUST BAR ──────────────────────────────── */
+    .gc-trust-bar {
+      background: var(--black-soft); border-bottom: 1px solid var(--border-mid);
+      padding: 1.25rem 3rem;
+      display: flex; align-items: center; justify-content: center;
+      gap: 3.5rem; flex-wrap: wrap;
+    }
+    .gc-trust-item { display: flex; align-items: center; gap: 9px; }
+    .gc-trust-item i { font-size: 16px; color: var(--gold-pale); }
+    .gc-trust-item span { font-size: 11px; color: var(--ink-faint); letter-spacing: 0.5px; }
+
+    /* ─── SECTIONS ───────────────────────────────── */
+    .gc-section { padding: 6rem 3rem; border-bottom: 1px solid var(--border-mid); }
+    .gc-section-alt { background: var(--black-mid); }
+    .gc-section-dark { background: var(--black-panel); }
+    .gc-eyebrow {
+      font-size: 9px; color: var(--gold); letter-spacing: 3.5px;
+      text-transform: uppercase; margin-bottom: 1.5rem; font-weight: 400;
+    }
+    .gc-h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(26px, 3vw, 38px);
+      font-weight: 300; color: var(--cream); font-style: italic; line-height: 1.3;
+    }
+    .gc-lead {
+      font-size: 14px; color: var(--cream-dim); line-height: 1.9;
+      max-width: 560px; font-weight: 300; margin-top: 1.25rem;
+    }
+
+    /* ─── SERVIZI ────────────────────────────────── */
+    .gc-services {
+      display: grid; grid-template-columns: repeat(5, 1fr);
+      gap: 1px; background: var(--border-mid); margin-top: 3.5rem;
+    }
+    .gc-service {
+      background: var(--black); padding: 2.5rem 1.75rem;
+      transition: background 0.25s; position: relative;
+    }
+    .gc-service::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+      background: var(--crimson); transform: scaleX(0); transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+    .gc-service:hover { background: var(--black-soft); }
+    .gc-service:hover::before { transform: scaleX(1); }
+    .gc-service-num {
+      font-family: 'Cormorant Garamond', serif; font-size: 32px;
+      color: var(--gold-dim); font-weight: 300; line-height: 1; margin-bottom: 1.25rem;
+    }
+    .gc-service-rule { width: 22px; height: 1px; background: var(--gold); opacity: 0.35; margin-bottom: 1rem; }
+    .gc-service h3 {
+      font-size: 10px; color: var(--cream); letter-spacing: 2px;
+      margin-bottom: 0.75rem; font-weight: 500; text-transform: uppercase;
+    }
+    .gc-service p { font-size: 12px; color: var(--ink-faint); line-height: 1.8; font-weight: 300; }
+
+    /* ─── COME LAVORIAMO ─────────────────────────── */
+    .gc-process { margin-top: 4rem; position: relative; }
+    .gc-process-track {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 1px; background: var(--border-mid);
+      position: relative;
+    }
+    .gc-process-track::before {
+      content: ''; position: absolute;
+      top: 0; left: 0; right: 0; height: 2px;
+      background: linear-gradient(90deg, var(--crimson), var(--gold), var(--crimson));
+      z-index: 1;
+    }
+    .gc-step {
+      background: var(--black-panel); padding: 2.5rem 2rem;
+      position: relative;
+    }
+    .gc-step-n {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 48px; color: var(--gold-dim);
+      font-weight: 300; line-height: 1; margin-bottom: 1rem;
+      position: absolute; top: 1.5rem; right: 1.75rem; opacity: 0.6;
+    }
+    .gc-step-icon { font-size: 26px; color: var(--gold); margin-bottom: 1.25rem; display: block; }
+    .gc-step h4 {
+      font-size: 11px; color: var(--cream); font-weight: 500;
+      letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 0.75rem;
+    }
+    .gc-step p { font-size: 12px; color: var(--cream-dim); line-height: 1.85; font-weight: 300; }
+    .gc-step-cta {
+      display: inline-block; margin-top: 1rem;
+      font-size: 9px; color: var(--gold);
+      letter-spacing: 2px; text-transform: uppercase;
+      border-bottom: 1px solid var(--gold-dim); padding-bottom: 1px;
+    }
+
+    /* ─── PERCHÉ ─────────────────────────────────── */
+    .gc-perche { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3.5rem; margin-top: 3.5rem; }
+    .gc-punto { padding-top: 1.75rem; border-top: 1px solid var(--gold-dim); }
+    .gc-punto-n { font-family: 'Cormorant Garamond', serif; font-size: 15px; color: var(--gold); margin-bottom: 0.75rem; font-style: italic; }
+    .gc-punto h3 { font-size: 10px; color: var(--cream); font-weight: 500; margin-bottom: 0.75rem; letter-spacing: 1.5px; text-transform: uppercase; }
+    .gc-punto p { font-size: 13px; color: var(--cream-dim); line-height: 1.9; font-weight: 300; }
+
+    /* ─── PER CHI ────────────────────────────────── */
+    .gc-perchi { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border-mid); margin-top: 3.5rem; }
+    .gc-perchi-col { background: var(--black-mid); padding: 3rem; }
+    .gc-perchi-col h4 { font-size: 9px; color: var(--gold); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 1.75rem; font-weight: 400; }
+    .gc-perchi-col ul { list-style: none; }
+    .gc-perchi-col li { font-size: 13px; color: var(--cream-dim); line-height: 2.2; padding-left: 1.5rem; position: relative; font-weight: 300; }
+    .gc-perchi-col li::before { content: '—'; position: absolute; left: 0; color: var(--crimson); font-size: 10px; top: 4px; }
+
+    /* ─── MID CTA ────────────────────────────────── */
+    .gc-mid-cta {
+      background: var(--black-soft);
+      border-top: 1px solid var(--border-mid); border-bottom: 1px solid var(--border-mid);
+      padding: 4rem 3rem; display: flex;
+      align-items: center; justify-content: space-between;
+      gap: 3rem; flex-wrap: wrap;
+    }
+    .gc-mid-cta h3 {
+      font-family: 'Cormorant Garamond', serif; font-size: 28px;
+      color: var(--cream); font-style: italic; font-weight: 300; margin-bottom: 0.75rem;
+    }
+    .gc-mid-cta p { font-size: 13px; color: var(--cream-dim); max-width: 460px; line-height: 1.75; }
+    .gc-mid-cta-actions { display: flex; gap: 1rem; flex-wrap: wrap; flex-shrink: 0; }
+
+    /* ─── FOUNDER ────────────────────────────────── */
+    .gc-founder { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 5rem; margin-top: 3rem; align-items: start; }
+    .gc-founder-card {
+      background: var(--black-soft); border: 1px solid var(--border-mid);
+      padding: 2.5rem; text-align: center; position: relative;
+    }
+    .gc-founder-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--crimson), var(--gold), var(--crimson));
+    }
+    .gc-founder-avatar {
+      width: 86px; height: 86px; border-radius: 50%;
+      border: 1px solid var(--gold-pale);
+      background: var(--black-panel);
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 1.5rem;
+    }
+    .gc-founder-avatar i { font-size: 38px; color: var(--gold-pale); }
+    .gc-founder-name { font-family: 'Cormorant Garamond', serif; font-size: 22px; color: var(--cream); font-style: italic; font-weight: 300; margin-bottom: 4px; }
+    .gc-founder-role { font-size: 9px; color: var(--gold); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 1.5rem; }
+    .gc-founder-bio { font-size: 12px; color: var(--cream-dim); line-height: 1.85; font-weight: 300; text-align: left; }
+    .gc-founder-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 1.5rem; justify-content: center; }
+    .gc-founder-tag { font-size: 9px; color: var(--ink-faint); border: 1px solid var(--border-mid); padding: 4px 10px; letter-spacing: 1px; text-transform: uppercase; }
+    .gc-quote {
+      border-left: 2px solid var(--crimson); padding: 1.75rem 2.5rem;
+      margin: 0 0 2rem; background: var(--black-panel);
+    }
+    .gc-quote p { font-family: 'Cormorant Garamond', serif; font-size: 21px; color: var(--cream); font-style: italic; line-height: 1.7; font-weight: 300; }
+    .gc-quote cite { font-size: 10px; color: var(--ink-faint); display: block; margin-top: 1.25rem; letter-spacing: 1.5px; text-transform: uppercase; }
+    .gc-founder-story p { font-size: 13px; color: var(--cream-dim); line-height: 1.95; font-weight: 300; margin-bottom: 1.25rem; }
+    .gc-gold-link { font-size: 10px; color: var(--gold); text-decoration: none; letter-spacing: 2px; text-transform: uppercase; border-bottom: 1px solid var(--gold-dim); padding-bottom: 2px; display: inline-block; transition: border-color 0.2s; }
+    .gc-gold-link:hover { border-color: var(--gold); }
+
+    /* ─── LOVENEZIA ──────────────────────────────── */
+    .gc-lv-box {
+      border: 1px solid var(--gold-dim); background: var(--black-panel);
+      padding: 4rem; margin-top: 3.5rem; position: relative; overflow: hidden;
+    }
+    .gc-lv-box::before {
+      content: ''; position: absolute; top: -30%; right: -10%;
+      width: 45vw; height: 45vw; border-radius: 50%;
+      background: radial-gradient(circle, rgba(201,151,58,0.06) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .gc-lv-header { display: flex; align-items: baseline; gap: 1.5rem; margin-bottom: 0.75rem; }
+    .gc-lv-name { font-family: 'Cormorant Garamond', serif; font-size: 36px; color: var(--gold); font-style: italic; font-weight: 300; }
+    .gc-lv-pill { font-size: 9px; color: var(--gold); border: 1px solid var(--gold-dim); padding: 4px 14px; letter-spacing: 2px; text-transform: uppercase; font-weight: 400; }
+    .gc-lv-tagline { font-family: 'Cormorant Garamond', serif; font-size: 18px; color: var(--cream-dim); font-style: italic; margin-bottom: 2rem; }
+    .gc-lv-text { font-size: 14px; color: var(--cream-dim); line-height: 1.9; margin-bottom: 3rem; font-weight: 300; max-width: 640px; }
+    .gc-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border-mid); margin-bottom: 1.25rem; }
+    .gc-stat { background: var(--black-soft); padding: 1.75rem; text-align: center; }
+    .gc-stat-n { font-family: 'Cormorant Garamond', serif; font-size: 32px; color: var(--gold); font-weight: 300; }
+    .gc-stat-l { font-size: 10px; color: var(--ink-faint); margin-top: 5px; letter-spacing: 1px; }
+    .gc-stat-note { font-size: 10px; color: var(--ink-faint); font-style: italic; margin-bottom: 2.5rem; }
+    .gc-lv-values { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border-mid); margin: 0 0 2.5rem; }
+    .gc-lv-value { background: var(--black-mid); padding: 2rem 1.75rem; }
+    .gc-lv-value i { font-size: 22px; color: var(--crimson); margin-bottom: 1rem; display: block; }
+    .gc-lv-value h4 { font-size: 10px; color: var(--cream); letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 0.75rem; font-weight: 500; }
+    .gc-lv-value p { font-size: 12px; color: var(--ink-faint); line-height: 1.8; }
+
+    /* ─── CONTATTI ───────────────────────────────── */
+    .gc-contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; margin-top: 3.5rem; align-items: start; }
+    .gc-contact-items { display: flex; flex-direction: column; gap: 1rem; }
+    .gc-contact-wa {
+      display: flex; align-items: center; gap: 14px;
+      padding: 1.25rem 1.5rem;
+      background: rgba(37,211,102,0.06); border: 1px solid rgba(37,211,102,0.22);
+      text-decoration: none; transition: all 0.2s;
+    }
+    .gc-contact-wa:hover { background: rgba(37,211,102,0.11); border-color: rgba(37,211,102,0.45); }
+    .gc-contact-wa i { font-size: 24px; color: #25D366; flex-shrink: 0; }
+    .gc-contact-wa-label { font-size: 9px; color: rgba(37,211,102,0.55); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 2px; }
+    .gc-contact-wa-num { font-size: 15px; color: #25D366; font-weight: 300; }
+    .gc-contact-item {
+      display: flex; align-items: center; gap: 14px;
+      padding: 1rem 1.25rem; background: var(--black-panel);
+      border: 1px solid var(--border-mid); transition: border-color 0.2s;
+    }
+    .gc-contact-item:hover { border-color: var(--gold-pale); }
+    .gc-contact-item i { font-size: 18px; color: var(--gold); width: 22px; flex-shrink: 0; }
+    .gc-contact-item span { font-size: 13px; color: var(--cream-dim); font-weight: 300; }
+    .gc-contact-note {
+      margin-top: 1.5rem; padding: 1.25rem 1.5rem;
+      background: var(--black-panel); border: 1px solid var(--gold-dim);
+      border-left: 2px solid var(--gold);
+    }
+    .gc-contact-note p { font-size: 12px; color: var(--cream-dim); line-height: 1.75; }
+    .gc-contact-note strong { color: var(--gold); font-weight: 400; }
+
+    /* ─── FOOTER ─────────────────────────────────── */
+    footer.gc-footer { background: var(--black-panel); padding: 4rem 3rem 2.5rem; border-top: 1px solid var(--border-mid); }
+    .gc-footer-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 3rem; flex-wrap: wrap; gap: 2.5rem; }
+    .gc-footer-logo img { height: 56px; width: auto; }
+    .gc-footer-tagline { font-size: 12px; color: var(--ink-faint); max-width: 270px; line-height: 1.8; font-weight: 300; margin-top: 1rem; }
+    .gc-footer-cols { display: flex; gap: 5rem; }
+    .gc-footer-col h5 { font-size: 9px; color: var(--gold); letter-spacing: 2.5px; text-transform: uppercase; margin-bottom: 1.25rem; font-weight: 400; }
+    .gc-footer-col a, .gc-footer-col p { display: block; font-size: 11px; color: var(--ink-faint); text-decoration: none; line-height: 2.3; font-weight: 300; transition: color 0.2s; }
+    .gc-footer-col a:hover { color: var(--gold); }
+    .gc-footer-col .lv-link { color: var(--gold-pale); }
+    .gc-footer-bottom { border-top: 1px solid var(--border-mid); padding-top: 2rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; }
+    .gc-footer-copy { font-size: 11px; color: var(--ink-faint); font-weight: 300; }
+
+    /* ─── RESPONSIVE ─────────────────────────────── */
+    
+    /* ── FADE-IN SEZIONI ───────────────────────────────── */
+    .gc-section, .gc-section-alt, .gc-section-dark {
+      opacity: 0; transform: translateY(28px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .gc-section.visible, .gc-section-alt.visible, .gc-section-dark.visible {
+      opacity: 1; transform: translateY(0);
+    }
+    .gc-service, .gc-step, .gc-punto, .gc-perchi-col {
+      opacity: 0; transform: translateY(20px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    .gc-service.visible, .gc-step.visible, .gc-punto.visible, .gc-perchi-col.visible {
+      opacity: 1; transform: translateY(0);
+    }
+    .gc-service { transition: background 0.3s ease, box-shadow 0.3s ease, opacity 0.5s ease, transform 0.5s ease; }
+    .gc-service:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.12); }
+
+
+    /* ── FOCUS ACCESSIBILITÀ ───────────────────────────────── */
+    a:focus-visible, button:focus-visible, input:focus-visible,
+    select:focus-visible, textarea:focus-visible {
+      outline: 1px solid var(--gold);
+      outline-offset: 3px;
+    }
+    a:focus:not(:focus-visible), button:focus:not(:focus-visible) { outline: none; }
+
+    @media (max-width: 960px) {
+      [style*="grid-template-columns:repeat(4,1fr)"] { grid-template-columns: repeat(2, 1fr) !important; }
+      [style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; }
+      .gc-hero { grid-template-columns: 1fr; min-height: auto; padding: 3.5rem 1.5rem; gap: 3rem; }
+      .gc-hero-right { border-left: none; border-top: 1px solid var(--border-mid); padding-left: 0; padding-top: 2.5rem; }
+      .gc-services { grid-template-columns: repeat(2, 1fr); }
+      .gc-process-track { grid-template-columns: repeat(2, 1fr); }
+      .gc-perche { grid-template-columns: 1fr; gap: 2rem; }
+      .gc-perchi { grid-template-columns: 1fr; }
+      .gc-stats { grid-template-columns: repeat(2, 1fr); }
+      .gc-contact-grid { grid-template-columns: 1fr; gap: 3rem; }
+      .gc-footer-top { flex-direction: column; }
+      .gc-footer-cols { flex-wrap: wrap; gap: 2.5rem; }
+      .gc-founder { grid-template-columns: 1fr; }
+      .gc-lv-values { grid-template-columns: 1fr; }
+      nav.gc-nav { padding: 0 1.5rem; }
+      .gc-nav-links { display: none; }
+      .gc-section { padding: 3rem 1.25rem; }
+      .gc-mid-cta { flex-direction: column; padding: 3rem 1.5rem; }
+      .gc-trust-bar { padding: 1.25rem 1.5rem; gap: 1.5rem; }
+      .gc-sticky { padding: 12px 1.5rem; }
+      .gc-sticky-text { display: none; }
+      .gc-position-bar { padding: 2rem 1.5rem; }
+      .gc-lv-box { padding: 2.5rem 1.5rem; }
+    }
+
+    /* ─── SOCIAL ─────────────────────────────────── */
+    .gc-social-bar {
+      display: flex; align-items: center; gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    .gc-social-link {
+      display: flex; align-items: center; gap: 8px;
+      padding: 9px 18px; border: 1px solid var(--border-mid);
+      font-size: 10px; color: var(--cream-dim); text-decoration: none;
+      letter-spacing: 1.5px; text-transform: uppercase; font-weight: 400;
+      transition: all 0.2s;
+    }
+    .gc-social-link i { font-size: 16px; }
+    .gc-social-link.fb { border-color: rgba(24,119,242,0.35); color: #6b9fe4; }
+    .gc-social-link.fb:hover { background: rgba(24,119,242,0.12); border-color: rgba(24,119,242,0.65); color: #90b8f8; }
+    .gc-social-link.wa { border-color: rgba(37,211,102,0.35); color: #5dd98a; }
+    .gc-social-link.wa:hover { background: rgba(37,211,102,0.12); border-color: rgba(37,211,102,0.65); color: #25D366; }
+
+    /* Footer social */
+    .gc-footer-social { display: flex; gap: 0.75rem; margin-top: 1.25rem; }
+    .gc-footer-social a {
+      width: 36px; height: 36px; border: 1px solid var(--border-mid);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--ink-faint); text-decoration: none; font-size: 16px;
+      transition: all 0.2s;
+    }
+    .gc-footer-social a.fb:hover { border-color: rgba(24,119,242,0.5); color: #6b9fe4; }
+    .gc-footer-social a.wa:hover { border-color: rgba(37,211,102,0.5); color: #25D366; }
+  </style>
+
+  <link rel="canonical" href="https://www.gemmaconsulenze.com/">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Gemma Consulenze | Riduzione Costi Aziendali">
+  <meta property="og:description" content="Consulenza acquisti, riduzione costi e ottimizzazione fornitori per aziende, hotel e ristoranti in tutta Italia. Prima call gratuita.">
+  <meta property="og:image" content="https://www.gemmaconsulenze.com/assets/og-image.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.gemmaconsulenze.com">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:site_name" content="Gemma Consulenze">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Gemma Consulenze | Riduzione Costi Aziendali">
+  <meta name="twitter:description" content="Consulenza acquisti e riduzione costi per PMI, hotel e ristoranti. Prima call gratuita.">
+  <meta name="twitter:image" content="https://www.gemmaconsulenze.com/assets/og-image.jpg">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Gemma Consulenze",
+    "legalName": "Gemma Consulenze di Porceddu Diego",
+    "vatID": "IT05070270235",
+    "url": "https://www.gemmaconsulenze.com",
+    "logo": "https://www.gemmaconsulenze.com/logo.png",
+    "image": "https://www.gemmaconsulenze.com/og-image.jpg",
+    "description": "Consulente acquisti e riduzione costi per PMI, hotel e ristoranti. Analisi fornitori, contratti, utenze energetiche. Operativo in tutta Italia.",
+    "telephone": "+39-324-797-2328",
+    "email": "info@gemmaconsulenze.com",
+    "founder": {
+      "@type": "Person",
+      "name": "Diego Porceddu"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Italy"
+    },
+    "knowsAbout": [
+      "gestione acquisti aziendali",
+      "riduzione costi aziendali",
+      "ottimizzazione fornitori",
+      "consulenza energetica aziende",
+      "riduzione costi hotel",
+      "gestione utenze ristoranti",
+      "rinegoziazione contratti fornitori"
+    ],
+    "serviceType": [
+      "Consulenza acquisti",
+      "Riduzione costi aziendali",
+      "Ottimizzazione fornitori",
+      "Analisi contratti utenze",
+      "Gestione parco fornitori"
+    ],
+    "sameAs": [
+      "https://www.facebook.com/gemmaconsulenze"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- STICKY BAR -->
+  <div class="gc-sticky" id="stickyBar">
+    <div class="gc-sticky-text">
+      <strong>Prima call gratuita</strong> — vediamo dove stai perdendo margine.
+    </div>
+    <div class="gc-sticky-actions">
+      <a href="https://wa.me/393247972328" class="btn-wa-sm" aria-label="Scrivici su WhatsApp" target="_blank">
+        <i class="ti ti-brand-whatsapp"></i> WhatsApp
+      </a>
+      <button class="btn-gold-sm" onclick="document.getElementById('contatti').scrollIntoView({behavior:'smooth'})">Analizzo la tua situazione</button>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <nav class="gc-nav">
+    <div class="gc-nav-logo">
+      <img src="/assets/logo-gemma.webp" alt="Gemma Consulenze" width="160" height="50">
+    </div>
+    <div class="gc-nav-links">
+      <a href="#servizi">Servizi</a>
+      <a href="#come-lavoro">Come lavoro</a>
+      <a href="#chi-siamo">Chi sono</a>
+      <a href="#lovenezia">LoVenezia</a>
+      <a href="#contatti" class="gc-nav-cta" aria-label="Vai alla sezione contatti">Parliamo</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="gc-hero">
+    <div style="position:relative;z-index:1;">
+      <div class="gc-hero-eyebrow">Hospitality &amp; Food · Commercio &amp; Artigianato · Imprese &amp; Cantieri · Agricoltura &amp; Produzione</div>
+      <h1>Ogni euro speso male è un margine che <em>non tornerà.</em></h1>
+
+      <div class="gc-killer">
+        <p>Ogni mese molte aziende pagano <strong>più del necessario</strong>. Analizzo costi, fornitori e contratti per <strong>ridurre gli sprechi e migliorare la marginalità</strong> — senza cambiare la tua operatività. Solo numeri, niente teoria.</p>
+      </div>
+
+      <div class="gc-hero-rule"></div>
+      <p class="gc-hero-sub">Gemma Consulenze affianca imprenditori e responsabili d'azienda: dall'energia alla telefonia, dalle forniture ai cantieri. Un intervento concreto con risultati misurabili.<br><span style="color:var(--gold-pale);font-size:0.88em;font-style:italic;">Hotel, ristoranti e aziende spesso perdono margine senza rendersene conto.</span></p>
+      <div class="gc-hero-actions">
+        <button class="btn-gold" onclick="document.getElementById('contatti').scrollIntoView({behavior:'smooth'})">Analizzo la tua situazione</button>
+        <a href="https://wa.me/393247972328" class="btn-wa" target="_blank"><i class="ti ti-brand-whatsapp"></i> Scrivi su WhatsApp</a>
+      </div>
+    </div>
+    <div class="gc-hero-right">
+      <div class="gc-trust-badge">
+        <div class="badge-icon"><i class="ti ti-shield-check"></i></div>
+        <strong>"Zero conflitti di interessi."</strong>
+        <p>Nessuna commissione da fornitori.<br>Nessun accordo di esclusiva.<br>Solo il tuo interesse.</p>
+      </div>
+      <div class="gc-hero-stat">
+        <div class="gc-hero-stat-n">8+</div>
+        <div class="gc-hero-stat-l">anni di esperienza diretta su acquisti e fornitori</div>
+      </div>
+      <div class="gc-hero-rule-sm"></div>
+      <div class="gc-hero-stat">
+        <div class="gc-hero-stat-n">110K+</div>
+        <div class="gc-hero-stat-l">follower della community LoVenezia</div>
+      </div>
+      <div class="gc-hero-rule-sm"></div>
+      <div class="gc-hero-stat">
+        <div class="gc-hero-stat-n">Prima call</div>
+        <div class="gc-hero-stat-l">gratuita · capiamo insieme se e dove si può intervenire</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POSITIONING LINE -->
+  <div class="gc-position-bar">
+    <p>Riduco i tuoi costi — <em>PMI, hotel, ristoranti — tutta Italia.</em><br>Forniture, energia, telefonia, fornitori — tutto analizzato con metodo.</p>
+    <small>Consulenza acquisti e costi per PMI, hotel, ristorazione e imprese edili</small>
+  </div>
+
+  <!-- TRUST BAR -->
+  <div class="gc-trust-bar">
+    <div class="gc-trust-item"><i class="ti ti-tools-kitchen-2"></i><span>Hospitality &amp; Food</span></div>
+    <div class="gc-trust-item"><i class="ti ti-building-store"></i><span>Commercio &amp; Artigianato</span></div>
+    <div class="gc-trust-item"><i class="ti ti-crane"></i><span>Imprese &amp; Cantieri</span></div>
+    <div class="gc-trust-item"><i class="ti ti-plant"></i><span>Agricoltura &amp; Produzione</span></div>
+    <div class="gc-trust-item"><i class="ti ti-map-pin"></i><span>Tutta Italia · da remoto</span></div>
+  </div>
+
+  <!-- SERVIZI -->
+  <section class="gc-section" id="servizi">
+    <div class="gc-eyebrow">I miei servizi</div>
+    <h2 class="gc-h2">Interventi mirati. Risultati misurabili.</h2>
+    <p class="gc-lead">Ogni mandato inizia dall'analisi della situazione reale. Niente modelli precostituiti — solo azioni calibrate su ciò che puoi effettivamente ottimizzare.</p>
+    <div class="gc-services">
+      <div class="gc-service">
+        <div class="gc-service-num">01</div>
+        <div class="gc-service-rule"></div>
+        <h3>Controllo fatture</h3>
+        <p>Verifica sistematica delle fatture rispetto ai contratti. Individuiamo errori, scostamenti e addebiti non dovuti prima che diventino abitudine.</p>
+      </div>
+      <div class="gc-service">
+        <div class="gc-service-num">02</div>
+        <div class="gc-service-rule"></div>
+        <h3>Analisi acquisti</h3>
+        <p>Fotografia completa delle spese ricorrenti: fornitori attivi, frequenza, prezzi, condizioni contrattuali. Da qui partono tutte le decisioni.</p>
+      </div>
+      <div class="gc-service">
+        <div class="gc-service-num">03</div>
+        <div class="gc-service-rule"></div>
+        <h3>Gestione fornitori</h3>
+        <p>Revisione del parco fornitori e supporto nelle trattative. Condizioni migliori si ottengono — ma solo con i dati giusti in mano.</p>
+      </div>
+      <div class="gc-service">
+        <div class="gc-service-num">04</div>
+        <div class="gc-service-rule"></div>
+        <h3>Energia e utilities</h3>
+        <p>Contratti energetici, gas, telefonia e utilities: un'area spesso trascurata, con margini di risparmio significativi e concreti.</p>
+      </div>
+      <div class="gc-service">
+        <div class="gc-service-num">05</div>
+        <div class="gc-service-rule"></div>
+        <h3>Report periodici</h3>
+        <p>Ogni ciclo si chiude con un documento chiaro: criticità rilevate, risparmi conseguiti, azioni raccomandate. Uno strumento, non un archivio.</p>
+      </div>
+    </div>
+    <div style="background:var(--black-panel);border:1px solid var(--border-mid);border-left:2px solid var(--gold-dim);padding:1.5rem 2rem;margin-top:2.5rem;">
+      <p style="font-size:12px;color:var(--ink-faint);line-height:1.8;font-style:italic;">Gemma Consulenze non sostituisce il commercialista e non entra nella gestione amministrativa. Il mio intervento è focalizzato esclusivamente su acquisti, costi e fornitori.</p>
+    </div>
+  </section>
+
+  <!-- COME LAVORIAMO -->
+  <section class="gc-section gc-section-alt" id="come-lavoro">
+    <div class="gc-eyebrow">Come lavoro</div>
+    <h2 class="gc-h2">Un processo chiaro, in quattro passi.</h2>
+    <p class="gc-lead">Nessuna sorpresa, nessun impegno nascosto. Ogni fase ha un obiettivo preciso e un output tangibile.</p>
+    <div class="gc-process">
+      <div class="gc-process-track">
+        <div class="gc-step">
+          <span class="gc-step-n">01</span>
+          <i class="ti ti-messages gc-step-icon"></i>
+          <h4>Prima call gratuita</h4>
+          <p>Una conversazione esplorativa: capiamo insieme la tua situazione, i tuoi fornitori, i costi che ti pesano di più. Senza impegno, senza moduli da compilare.</p>
+          <span class="gc-step-cta">~20 minuti</span>
+        </div>
+        <div class="gc-step">
+          <span class="gc-step-n">02</span>
+          <i class="ti ti-search gc-step-icon"></i>
+          <h4>Analisi e mappatura</h4>
+          <p>Individuo dove stai pagando più del necessario e dove esistono margini concreti di intervento.</p>
+          <span class="gc-step-cta">Dati reali, non stime</span>
+        </div>
+        <div class="gc-step">
+          <span class="gc-step-n">03</span>
+          <i class="ti ti-adjustments gc-step-icon"></i>
+          <h4>Proposta operativa</h4>
+          <p>Ti presentiamo le azioni concrete: quali fornitori rinegoziare, quali contratti rivedere, quali errori recuperare. Con una stima realistica del risparmio ottenibile.</p>
+          <span class="gc-step-cta">Numeri, non promesse</span>
+        </div>
+        <div class="gc-step">
+          <span class="gc-step-n">04</span>
+          <i class="ti ti-chart-line gc-step-icon"></i>
+          <h4>Gestione e misurazione</h4>
+          <p>Seguiamo l'implementazione e misuriamo i risultati. Report periodici con tutto documentato: cosa è stato fatto, quanto è stato risparmiato, cosa fare dopo.</p>
+          <span class="gc-step-cta">Risultati misurabili</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PERCHÉ -->
+  <section class="gc-section">
+    <div class="gc-eyebrow">Il mio approccio</div>
+    <h2 class="gc-h2">Un metodo costruito sul campo, non in aula.</h2>
+    <div class="gc-perche">
+      <div class="gc-punto">
+        <div class="gc-punto-n">I.</div>
+        <h3>Operativo, non consulenziale</h3>
+        <p>Il mio approccio è stato forgiato in anni di lavoro diretto su acquisti e fornitori in aziende strutturate. Entro nei processi, analizzo i dati reali, intervengo dove esistono margini concreti — non dove esistono slide da presentare.</p>
+      </div>
+      <div class="gc-punto">
+        <div class="gc-punto-n">II.</div>
+        <h3>Trasparenza totale</h3>
+        <p>Ogni analisi produce un report leggibile e azionabile. Saprai sempre cosa è stato fatto, quanto è stato risparmiato e cosa fare nel periodo successivo. Non lavoro per essere indispensabile — lavoro per renderti autonomo.</p>
+      </div>
+      <div class="gc-punto">
+        <div class="gc-punto-n">III.</div>
+        <h3>Nessun conflitto di interessi</h3>
+        <p>Non sono legato ad alcun fornitore, non percepisco commissioni, non ho accordi di esclusiva. Il mio unico mandato è ottimizzare i tuoi costi. Questa indipendenza non è un dettaglio — è la base del mio metodo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PER CHI -->
+  <section class="gc-section gc-section-alt">
+    <div class="gc-eyebrow">Per chi lavoro</div>
+    <h2 class="gc-h2">Le criticità sono le stesse. La differenza è avere qualcuno che se ne occupi.</h2>
+    <p style="font-size:14px;color:var(--cream-dim);line-height:1.85;max-width:560px;font-weight:300;margin-top:1.25rem;">Le criticità sono sempre le stesse. La differenza è avere qualcuno che se ne occupi <em style="font-style:italic;color:var(--cream);">davvero</em>.</p>
+
+    <!-- 4 MACRO CATEGORIE -->
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border-mid);margin-top:3rem;">
+
+      <div style="background:var(--black);padding:2.5rem 2rem;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:1.5rem;right:1.75rem;font-size:32px;color:var(--gold-dim);font-family:'Cormorant Garamond',serif;font-weight:300;opacity:0.5;">01</div>
+        <i class="ti ti-tools-kitchen-2" style="font-size:28px;color:var(--gold);display:block;margin-bottom:1.25rem;"></i>
+        <h3 style="font-size:11px;color:var(--cream);letter-spacing:2px;text-transform:uppercase;font-weight:500;margin-bottom:1rem;">Hospitality &amp; Food</h3>
+        <ul style="list-style:none;">
+          <li style="font-size:12px;color:var(--ink-faint);line-height:2.1;padding-left:1.25rem;position:relative;">
+            <span style="position:absolute;left:0;color:var(--crimson);font-size:10px;">—</span>Hotel, B&amp;B, agriturismi
+          </li>
+          <li style="font-size:12px;color:var(--ink-faint);line-height:2.1;padding-left:1.25rem;position:relative;">
+            <span style="position:absolute;left:0;color:var(--crimson);font-size:10px;">—</span>Ristoranti, trattorie, osterie
+          </li>
+          <li style="font-size:12px;color:var(--ink-faint);line-height:2.1;padding-left:1.25rem;position:relative;">
+            <span style="position:absolute;left:0;color:var(--crimson);font-size:10px;">—</span>Bar, caffetterie, catering
+          </li>
+          <li style="font-size:12px;color:var(--ink-faint);line-height:2.1;padding-left:1.25rem;position:relative;">
+            <span style="position:absolute;left:0;color:var(--crimson);font-size:10px;">—</span>Strutture ricettive e SPA
+          </li>
+        </ul>
+      </div>
+
+      <div style="background:var(--black);padding:2.5rem 2rem;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:1.5rem;right:1.75rem;font-size:32px;color:var(--gold-dim);font-family:'Cormorant Garamond',serif;font-weight:300;opacity:0.5;">02</div>
+        <i class="ti ti-building-store" style="font-size:28px;color:var(--gold);display:block;margin-bottom:1.25rem;"></i>
+        <h3 style="font-size:11px;color:var(--cream);letter-spacing:2px;text-transform:uppercase;font-weight:500;margin-bottom:1rem;">Commercio &amp; Artigianato</h3>
+        <ul style="list-style:none;">
+          <li style="font-size:12px;color:var(--ink-faint);line-height:2.1;padding-left:1.25rem;position:relative;">
+            <span style="position:absolute;left:0;color:var(--crimson);font-size:10px;">—</span>Negozi e retail a conduzione familiare
+          </li>
+          <li style="font-size:12px;color:var(--ink-faint);line-height:2.1;padding-left:1.25rem;position:relative;">
+            <span style="position:absolute;left:0;color:var(--crimson);font-size:10px;">—</span>Botteghe e artigiani
+          </li>
+          <li style="font-size:12px;color:var(--ink-faint);line-height:2.1;padding-left:1.25rem;position:relative;">
+            <span style="position:absolute;left:0;color:var(--crimson);font-size:10px;">—</span>Agenzie e studi professionali
+          </li>
+          <li style="font-size:12px;color:var(--ink-faint);line-height:2.1;padding-left:1.25rem;position:relative;">
+            <span style="position:absolute;left:0;color:var(--crimson);font-size:10px;">—</span>Centri estetici e palestre
+          </li>
+        </ul>
+      </div>
+
+      <div style="background:var(--black);padding:2.5rem 2rem;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:1.5rem;right:1.75rem;font-size:32px;color:var(--gold-dim);font-family:'Cormorant Garamond',serif;font-weight:300;opacity:0.5;">03</div>
+        <i class="ti ti-crane" style="font-size:28px;color:var(--gold);display:block;margin-bottom:1.25rem;"></i>
+        <h3 style="font-size:11px;color:var(--cream);letter-spacing:2px;text-transform:uppercase;font-weight:500;margin-bottom:1rem;">Imprese &amp; Cantieri</h3>
+        <ul style="list-style:none;">
+          <li style="font-size:12px;color:var(--ink-faint);line-height:2.1;padding-left:1.25rem;position:relative;">
+            <span style="position:absolute;left:0;color:var(--crimson);font-size:10px;">—</span>PMI fino a 50 dipendenti
+          </li>
+          <li style="font-size:12px;color:var(--ink-faint);line-height:2.1;padding-left:1.25rem;position:relative;">
+            <span style="position:absolute;left:0;color:var(--crimson);font-size:10px;">—</span>Imprese edili e cantieri strutturati
+          </li>
+          <li style="font-size:12px;color:var(--ink-faint);line-height:2.1;padding-left:1.25rem;position:relative;">
+            <span style="position:absolute;left:0;color:var(--crimson);font-size:10px;">—</span>Aziende di logistica e trasporti
+          </li>
+          <li style="font-size:12px;color:var(--ink-faint);line-height:2.1;padding-left:1.25rem;position:relative;">
+            <span style="position:absolute;left:0;color:var(--crimson);font-size:10px;">—</span>Aziende di servizi e manutenzione
+          </li>
+        </ul>
+      </div>
+
+      <div style="background:var(--black);padding:2.5rem 2rem;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:1.5rem;right:1.75rem;font-size:32px;color:var(--gold-dim);font-family:'Cormorant Garamond',serif;font-weight:300;opacity:0.5;">04</div>
+        <i class="ti ti-plant" style="font-size:28px;color:var(--gold);display:block;margin-bottom:1.25rem;"></i>
+        <h3 style="font-size:11px;color:var(--cream);letter-spacing:2px;text-transform:uppercase;font-weight:500;margin-bottom:1rem;">Agricoltura &amp; Produzione</h3>
+        <ul style="list-style:none;">
+          <li style="font-size:12px;color:var(--ink-faint);line-height:2.1;padding-left:1.25rem;position:relative;">
+            <span style="position:absolute;left:0;color:var(--crimson);font-size:10px;">—</span>Aziende agricole e cantine
+          </li>
+          <li style="font-size:12px;color:var(--ink-faint);line-height:2.1;padding-left:1.25rem;position:relative;">
+            <span style="position:absolute;left:0;color:var(--crimson);font-size:10px;">—</span>Caseifici e produzione alimentare
+          </li>
+          <li style="font-size:12px;color:var(--ink-faint);line-height:2.1;padding-left:1.25rem;position:relative;">
+            <span style="position:absolute;left:0;color:var(--crimson);font-size:10px;">—</span>Agriturismi produttivi
+          </li>
+          <li style="font-size:12px;color:var(--ink-faint);line-height:2.1;padding-left:1.25rem;position:relative;">
+            <span style="position:absolute;left:0;color:var(--crimson);font-size:10px;">—</span>Food &amp; beverage e packaging
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- RICONOSCI QUESTA SITUAZIONE -->
+    <div style="margin-top:1px;background:var(--black-mid);display:grid;grid-template-columns:1fr 1fr;gap:1px;">
+      <div style="background:var(--black-mid);padding:3rem;">
+        <h4 style="font-size:9px;color:var(--gold);letter-spacing:3px;text-transform:uppercase;margin-bottom:1.75rem;font-weight:400;">Riconosci questa situazione?</h4>
+        <ul style="list-style:none;">
+          <li style="font-size:13px;color:var(--cream-dim);line-height:2.2;padding-left:1.5rem;position:relative;font-weight:300;"><span style="position:absolute;left:0;color:var(--crimson);font-size:10px;top:4px;">—</span>Hai più fornitori attivi e non riesci a tenerli tutti sotto controllo</li>
+          <li style="font-size:13px;color:var(--cream-dim);line-height:2.2;padding-left:1.5rem;position:relative;font-weight:300;"><span style="position:absolute;left:0;color:var(--crimson);font-size:10px;top:4px;">—</span>I costi fissi crescono, ma non capisci dove si perdono i soldi</li>
+          <li style="font-size:13px;color:var(--cream-dim);line-height:2.2;padding-left:1.5rem;position:relative;font-weight:300;"><span style="position:absolute;left:0;color:var(--crimson);font-size:10px;top:4px;">—</span>Le fatture vengono pagate senza una verifica sistematica</li>
+          <li style="font-size:13px;color:var(--cream-dim);line-height:2.2;padding-left:1.5rem;position:relative;font-weight:300;"><span style="position:absolute;left:0;color:var(--crimson);font-size:10px;top:4px;">—</span>Hai già trattato con i fornitori, ma non sei certo di aver ottenuto il meglio</li>
+          <li style="font-size:13px;color:var(--cream-dim);line-height:2.2;padding-left:1.5rem;position:relative;font-weight:300;"><span style="position:absolute;left:0;color:var(--crimson);font-size:10px;top:4px;">—</span>Vorresti ottimizzare i costi senza stravolgere la tua operatività</li>
+        </ul>
+      </div>
+      <div style="background:var(--black-panel);padding:3rem;display:flex;flex-direction:column;justify-content:center;">
+        <p style="font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--cream);font-style:italic;font-weight:300;line-height:1.6;margin-bottom:1.5rem;">Se ti riconosci in almeno una di queste situazioni, è probabile che ci sia margine per intervenire.</p>
+        <button class="btn-gold" onclick="document.getElementById('contatti').scrollIntoView({behavior:'smooth'})">Analizzo la tua situazione</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- MID CTA -->
+  <div class="gc-mid-cta">
+    <div>
+      <h3>Non sai da dove iniziare?</h3>
+      <p>Bastano 20 minuti al telefono. Nessun impegno, nessuna analisi preventiva da fare: mi racconti la situazione, ti dico onestamente se e dove posso intervenire.</p>
+    </div>
+    <div class="gc-mid-cta-actions">
+      <a href="https://wa.me/393247972328" class="btn-wa" target="_blank"><i class="ti ti-brand-whatsapp"></i> Scrivici su WhatsApp</a>
+      <button class="btn-gold" onclick="document.getElementById('contatti').scrollIntoView({behavior:'smooth'})">Analizzo la tua situazione</button>
+    </div>
+  </div>
+
+  <!-- CHI SIAMO -->
+  <section class="gc-section gc-section-dark" id="chi-siamo">
+    <div class="gc-eyebrow">Chi sono</div>
+    <h2 class="gc-h2">Oltre otto anni di acquisti. <em>Una scelta di libertà.</em></h2>
+    <div class="gc-founder">
+      <div class="gc-founder-card">
+        <div class="gc-founder-avatar" style="overflow:hidden;background:none;border:2px solid var(--gold-pale);">
+          <img src="/assets/diego-porceddu.webp" alt="Diego Porceddu — Gemma Consulenze" loading="lazy" width="360" height="360" style="width:100%;height:100%;object-fit:cover;display:block;">
+        </div>
+        <div class="gc-founder-name">Diego Porceddu</div>
+        <div class="gc-founder-role">Founder · Gemma Consulenze &amp; LoVenezia</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:13px;color:var(--ink-faint);font-style:italic;letter-spacing:0.3px;margin-bottom:1.5rem;">Consulente acquisti e costi · Operativo in tutta Italia</div>
+        <div class="gc-founder-bio">Oltre otto anni tra acquisti e ottimizzazione dei costi, in settori diversi. Ho scelto il lavoro autonomo per una ragione sola: essere davvero indipendente — nessun accordo con fornitori, nessun secondo fine. Opero da remoto su tutta Italia, senza costi di trasferta.</div>
+        <div class="gc-founder-tags">
+          <span class="gc-founder-tag">Acquisti</span>
+          <span class="gc-founder-tag">Energia</span>
+          <span class="gc-founder-tag">Fornitori</span>
+          <span class="gc-founder-tag">Hospitality</span>
+          <span class="gc-founder-tag">LoVenezia</span>
+        </div>
+        <div class="gc-social-bar" style="justify-content:center;margin-top:1.5rem;">
+          <a href="https://www.facebook.com/gemmaconsulenze" target="_blank" class="gc-social-link fb" aria-label="Seguici su Facebook">
+            <i class="ti ti-brand-facebook"></i> Facebook
+          </a>
+          <a href="https://wa.me/393247972328" target="_blank" class="gc-social-link wa" aria-label="Scrivici su WhatsApp">
+            <i class="ti ti-brand-whatsapp"></i> WhatsApp
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="gc-quote">
+          <p>"Nelle aziende ho sempre visto le stesse cose: fatture sbagliate che nessuno controllava, contratti energetici fermi da anni, fornitori mai rimessi in discussione. Ho deciso di occuparmene per chi non ha internamente questa figura."</p>
+          <cite>— Diego Porceddu</cite>
+        </div>
+        <div class="gc-founder-story">
+          <p>Certi errori sono trasversali: forniture a prezzi fuori mercato perché il contratto si rinnova in silenzio, errori di fatturazione che nessuno verifica, fornitori tenuti per abitudine più che per convenienza.</p>
+          <p>È su questi punti che intervengo — non con grandi ristrutturazioni, ma recuperando margine che era già lì, nascosto nelle spese ordinarie.</p>
+          <p>Lavoro da remoto su tutta Italia, zero costi di trasferta.</p>
+          <p style="font-size:12px;color:var(--cream-dim);line-height:1.8;padding:1rem 1.25rem;background:rgba(201,151,58,0.05);border-left:2px solid rgba(201,151,58,0.3);margin-bottom:1.25rem;font-style:italic;">Approccio costruito sul campo, tra acquisti, fornitori e operatività reale. Operativo con aziende, hospitality e realtà di ogni settore.</p>
+          <a href="#contatti" class="gc-gold-link">Richiedi una verifica gratuita →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOVENEZIA -->
+  <section class="gc-section" id="lovenezia" style="background:var(--parchment2);">
+    <div class="gc-eyebrow">Il progetto editoriale</div>
+    <h2 class="gc-h2">LoVenezia — Venezia raccontata come merita.</h2>
+
+    <!-- NATIONAL SCOPE NOTE -->
+    <div style="margin-top:1.5rem;padding:1.25rem 1.75rem;background:var(--black-panel);border:1px solid var(--border-mid);border-left:2px solid var(--gold);max-width:680px;">
+      <p style="font-size:13px;color:var(--cream-dim);line-height:1.8;font-weight:300;"><strong style="color:var(--gold);font-weight:400;">Gemma Consulenze opera in tutta Italia.</strong> LoVenezia è un asset aggiuntivo riservato alle strutture del territorio veneziano e lagunare — un vantaggio esclusivo per chi opera in quel contesto specifico.</p>
+    </div>
+
+    <div class="gc-lv-box" style="margin-top:2.5rem;">
+      <div class="gc-lv-header">
+        <span class="gc-lv-name">LoVenezia</span>
+        <span class="gc-lv-pill">Progetto editoriale</span>
+      </div>
+      <div class="gc-lv-tagline">Venezia raccontata come merita — da chi la conosce davvero.</div>
+      <p class="gc-lv-text">Gemma Consulenze è la realtà che sostiene e sviluppa LoVenezia — progetto editoriale dedicato al racconto della Venezia autentica, costruito in oltre dieci anni di lavoro fotografico e narrativo. Una community qualificata di persone che amano e scelgono Venezia, seguita da hotel, ristoranti e operatori del territorio.</p>
+
+      <div class="gc-stats">
+        <div class="gc-stat"><div class="gc-stat-n">110K+</div><div class="gc-stat-l">Follower totali</div></div>
+        <div class="gc-stat"><div class="gc-stat-n">4M+</div><div class="gc-stat-l">Views mensili</div></div>
+        <div class="gc-stat"><div class="gc-stat-n">47,6M</div><div class="gc-stat-l">Views annue</div></div>
+        <div class="gc-stat"><div class="gc-stat-n">10+</div><div class="gc-stat-l">Anni di attività</div></div>
+      </div>
+      <p class="gc-stat-note">Fonte: dati reali Meta Business Suite · Maggio 2025 – Maggio 2026</p>
+
+      <!-- VANTAGGIO VENEZIA -->
+      <div style="margin:2.5rem 0 0;padding-top:2.5rem;border-top:1px solid var(--border-mid);">
+        <div style="font-size:9px;color:var(--crimson);letter-spacing:3px;text-transform:uppercase;font-weight:400;margin-bottom:1rem;">Solo per le strutture del territorio veneziano</div>
+        <p style="font-size:14px;color:var(--cream);font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;line-height:1.6;margin-bottom:2rem;">Per chi opera a Venezia e in laguna, Gemma Consulenze offre qualcosa che nessun'altra consulenza può dare: l'accesso diretto alla piattaforma e al network di LoVenezia.</p>
+
+        <div class="gc-lv-values">
+          <div class="gc-lv-value">
+            <i class="ti ti-speakerphone"></i>
+            <h4>Contenuti social</h4>
+            <p>Il tuo brand raccontato sui canali LoVenezia a una community di viaggiatori e appassionati che scelgono Venezia perché la amano davvero. Storytelling autentico, non pubblicità.</p>
+          </div>
+          <div class="gc-lv-value">
+            <i class="ti ti-award"></i>
+            <h4>Top of the Week</h4>
+            <p>Una vetrina settimanale dedicata: la tua realtà in primo piano su tutti i canali LoVenezia davanti a una community attiva e coinvolta. Un posizionamento editoriale, non un annuncio.</p>
+          </div>
+          <div class="gc-lv-value">
+            <i class="ti ti-network"></i>
+            <h4>Network &amp; autorevolezza</h4>
+            <p>Dieci anni di relazioni nell'hospitality veneziano. Quando Gemma tratta con un fornitore del territorio, non è un consulente anonimo — è un nome conosciuto e rispettato.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="display:flex;gap:1.5rem;flex-wrap:wrap;margin-top:2.5rem;align-items:center;">
+        <a href="https://www.lovenezia.com" class="gc-gold-link" target="_blank">Scopri LoVenezia → www.lovenezia.com</a>
+        <a href="https://www.lovenezia.com/diventa-partner/" class="gc-gold-link" target="_blank" style="color:var(--cream-dim);border-color:var(--border-mid);">Diventa Partner →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATTI -->
+  <section class="gc-section gc-section-alt" id="contatti">
+    <div class="gc-eyebrow">Contatti</div>
+    <h2 class="gc-h2">Vediamo dove stai perdendo margine.</h2>
+    <div class="gc-contact-grid">
+      <div>
+        <p class="gc-lead">Non è necessario avere le idee chiare su cosa serve. Raccontaci la situazione — anche in modo informale. Spesso è proprio dalla conversazione che emerge dove si può intervenire.</p>
+        <p style="font-size:13px;color:var(--cream-dim);line-height:1.8;margin-top:1.25rem;font-weight:300;">La <strong style="color:var(--gold);font-weight:400;">prima call è gratuita</strong>: una conversazione esplorativa per capire insieme se e dove posso aiutarti. Nessun impegno, nessuna analisi da fare in anticipo.</p>
+        <button class="btn-gold" style="margin-top:2.5rem;" onclick="window.location.href='mailto:info@gemmaconsulenze.com'">Scrivici per email</button>
+      </div>
+      <div class="gc-contact-items">
+        <a href="https://wa.me/393247972328" class="gc-contact-wa" aria-label="Contattaci su WhatsApp" target="_blank">
+          <i class="ti ti-brand-whatsapp"></i>
+          <div>
+            <div class="gc-contact-wa-label">Risposta rapida</div>
+            <div class="gc-contact-wa-num">324 797 2328</div>
+          </div>
+        </a>
+        <div class="gc-contact-item">
+          <i class="ti ti-mail"></i>
+          <span>info@gemmaconsulenze.com</span>
+        </div>
+        <div class="gc-contact-item">
+          <i class="ti ti-map-pin"></i>
+          <span>Operativo in tutta Italia, prevalentemente da remoto</span>
+        </div>
+        <div class="gc-social-bar" style="margin-top:0;">
+          <a href="https://www.facebook.com/gemmaconsulenze" target="_blank" class="gc-social-link fb" aria-label="Seguici su Facebook">
+            <i class="ti ti-brand-facebook"></i> Seguici su Facebook
+          </a>
+          <a href="https://wa.me/393247972328" target="_blank" class="gc-social-link wa" aria-label="Scrivici su WhatsApp">
+            <i class="ti ti-brand-whatsapp"></i> 324 797 2328
+          </a>
+        </div>
+        <div class="gc-contact-note">
+          <p><strong>Prima call gratuita.</strong> Una conversazione esplorativa per capire insieme se e dove posso intervenire. Nessun obbligo di proseguire.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FORM CONTATTI -->
+    <div style="margin-top:3.5rem;max-width:680px;">
+      <div style="font-size:9px;color:var(--gold);letter-spacing:3.5px;text-transform:uppercase;margin-bottom:1.5rem;font-weight:400;">Oppure scrivimi direttamente</div>
+      <h3 style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:300;color:var(--cream);font-style:italic;margin-bottom:0.5rem;">Mandami un messaggio</h3>
+      <p style="font-size:13px;color:var(--cream-dim);font-weight:300;line-height:1.75;margin-bottom:2rem;">Compila il form e ti rispondo entro 24 ore. Nessun impegno, solo una conversazione.</p>
+
+      <div style="background:var(--black-panel);border:1px solid var(--gold-dim);border-left:2px solid var(--gold);padding:1rem 1.5rem;margin-bottom:2rem;">
+        <p style="font-size:11px;color:var(--ink-faint);line-height:1.75;font-style:italic;">
+          <strong style="color:var(--gold-pale);font-weight:400;">Nota sulla privacy:</strong> per ragioni di riservatezza e trattamento dei dati, ti chiedo di non allegare o trascrivere documenti aziendali, fatture o dati sensibili in questo form. Ne parleremo direttamente in call.
+        </p>
+      </div>
+
+      <div id="gc-form-area">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;">
+          <div>
+            <label style="display:block;font-size:9px;color:var(--gold);letter-spacing:2px;text-transform:uppercase;margin-bottom:0.5rem;">Nome *</label>
+            <input type="text" id="gc-nome" placeholder="Mario" style="width:100%;background:var(--black-soft);border:1px solid var(--border-mid);color:var(--cream);padding:0.75rem 1rem;font-family:'Jost',sans-serif;font-size:13px;font-weight:300;outline:none;transition:border-color 0.2s;" onfocus="this.style.borderColor='var(--gold-pale)'" onblur="this.style.borderColor='var(--border-mid)'">
+          </div>
+          <div>
+            <label style="display:block;font-size:9px;color:var(--gold);letter-spacing:2px;text-transform:uppercase;margin-bottom:0.5rem;">Cognome *</label>
+            <input type="text" id="gc-cognome" placeholder="Rossi" style="width:100%;background:var(--black-soft);border:1px solid var(--border-mid);color:var(--cream);padding:0.75rem 1rem;font-family:'Jost',sans-serif;font-size:13px;font-weight:300;outline:none;transition:border-color 0.2s;" onfocus="this.style.borderColor='var(--gold-pale)'" onblur="this.style.borderColor='var(--border-mid)'">
+          </div>
+          <div>
+            <label style="display:block;font-size:9px;color:var(--gold);letter-spacing:2px;text-transform:uppercase;margin-bottom:0.5rem;">Email *</label>
+            <input type="email" id="gc-email" placeholder="mario@azienda.it" style="width:100%;background:var(--black-soft);border:1px solid var(--border-mid);color:var(--cream);padding:0.75rem 1rem;font-family:'Jost',sans-serif;font-size:13px;font-weight:300;outline:none;transition:border-color 0.2s;" onfocus="this.style.borderColor='var(--gold-pale)'" onblur="this.style.borderColor='var(--border-mid)'">
+          </div>
+          <div>
+            <label style="display:block;font-size:9px;color:var(--gold);letter-spacing:2px;text-transform:uppercase;margin-bottom:0.5rem;">Telefono</label>
+            <input type="tel" id="gc-tel" placeholder="+39 333 1234567" style="width:100%;background:var(--black-soft);border:1px solid var(--border-mid);color:var(--cream);padding:0.75rem 1rem;font-family:'Jost',sans-serif;font-size:13px;font-weight:300;outline:none;transition:border-color 0.2s;" onfocus="this.style.borderColor='var(--gold-pale)'" onblur="this.style.borderColor='var(--border-mid)'">
+          </div>
+          <div style="grid-column:1/-1;">
+            <label style="display:block;font-size:9px;color:var(--gold);letter-spacing:2px;text-transform:uppercase;margin-bottom:0.5rem;">Azienda / Attività *</label>
+            <input type="text" id="gc-azienda" required placeholder="Nome dell'azienda o attività" style="width:100%;background:var(--black-soft);border:1px solid var(--border-mid);color:var(--cream);padding:0.75rem 1rem;font-family:'Jost',sans-serif;font-size:13px;font-weight:300;outline:none;transition:border-color 0.2s;" onfocus="this.style.borderColor='var(--gold-pale)'" onblur="this.style.borderColor='var(--border-mid)'">
+          </div>
+          <div style="grid-column:1/-1;">
+            <label style="display:block;font-size:9px;color:var(--gold);letter-spacing:2px;text-transform:uppercase;margin-bottom:0.5rem;">Tipologia attività *</label>
+            <select id="gc-settore" required style="width:100%;background:var(--black-soft);border:1px solid var(--border-mid);color:var(--cream-dim);padding:0.75rem 1rem;font-family:'Jost',sans-serif;font-size:13px;font-weight:300;outline:none;appearance:none;">
+              <option value="">— Seleziona —</option>
+              <option>Hotel / Struttura ricettiva</option>
+              <option>Ristorante / Food service</option>
+              <option>PMI / Impresa commerciale</option>
+              <option>Retail / Grande distribuzione</option>
+              <option>Studio professionale</option>
+              <option>Altro</option>
+            </select>
+          </div>
+          <div>
+            <label style="display:block;font-size:9px;color:var(--gold);letter-spacing:2px;text-transform:uppercase;margin-bottom:0.5rem;">Partita IVA <span style="opacity:0.5;font-size:8px;">(opzionale)</span></label>
+            <input type="text" id="gc-piva" placeholder="IT00000000000" style="width:100%;background:var(--black-soft);border:1px solid var(--border-mid);color:var(--cream);padding:0.75rem 1rem;font-family:'Jost',sans-serif;font-size:13px;font-weight:300;outline:none;transition:border-color 0.2s;" onfocus="this.style.borderColor='var(--gold-pale)'" onblur="this.style.borderColor='var(--border-mid)'">
+          </div>
+          <div style="grid-column:1/-1;">
+            <label style="display:block;font-size:9px;color:var(--gold);letter-spacing:2px;text-transform:uppercase;margin-bottom:0.5rem;">Di cosa hai bisogno? *</label>
+            <textarea id="gc-msg" rows="4" placeholder="Descrivimi brevemente la tua situazione e su cosa vorresti un confronto..." style="width:100%;background:var(--black-soft);border:1px solid var(--border-mid);color:var(--cream);padding:0.75rem 1rem;font-family:'Jost',sans-serif;font-size:13px;font-weight:300;outline:none;resize:vertical;transition:border-color 0.2s;" onfocus="this.style.borderColor='var(--gold-pale)'" onblur="this.style.borderColor='var(--border-mid)'"></textarea>
+          </div>
+        </div>
+
+        <!-- Honeypot anti-spam -->
+        <div style="display:none;" aria-hidden="true">
+          <label for="gc-website">Non compilare questo campo</label>
+          <input type="text" id="gc-website" name="website" tabindex="-1" autocomplete="off">
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:0.75rem;margin-top:1.25rem;">
+          <input type="checkbox" id="gc-privacy" style="margin-top:3px;accent-color:var(--gold);flex-shrink:0;">
+          <label for="gc-privacy" style="font-size:11px;color:var(--ink-faint);line-height:1.65;cursor:pointer;">Ho letto e accetto la <a href="#" style="color:var(--gold-pale);">Privacy Policy</a>. Autorizzo il trattamento dei dati personali ai sensi del GDPR (Reg. UE 2016/679) e del D.Lgs. 196/2003.</label>
+        </div>
+
+        <button onclick="gcSubmitForm()" style="margin-top:1.5rem;background:var(--gold);color:var(--black);border:none;padding:14px 32px;font-family:'Jost',sans-serif;font-size:10px;font-weight:500;letter-spacing:2.5px;text-transform:uppercase;cursor:pointer;width:100%;transition:background 0.2s;" onmouseover="this.style.background='var(--gold-light)'" onmouseout="this.style.background='var(--gold)'">
+          Invia il messaggio
+        </button>
+      </div>
+
+      <div id="gc-form-success" style="display:none;text-align:center;padding:3rem 0;">
+        <i class="ti ti-circle-check" style="font-size:48px;color:var(--gold);display:block;margin-bottom:1rem;"></i>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--cream);font-style:italic;font-weight:300;margin-bottom:0.5rem;">Messaggio inviato!</h3>
+        <p style="font-size:13px;color:var(--cream-dim);font-weight:300;">Grazie per avermi scritto. Ti risponderò entro 24 ore per fissare la call conoscitiva gratuita.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="gc-footer">
+    <div class="gc-footer-top">
+      <div>
+        <div class="gc-footer-logo">
+          <img src="/assets/logo-gemma.webp" alt="Gemma Consulenze" width="160" height="50">
+        </div>
+        <div class="gc-footer-tagline">Consulenza acquisti, costi e fornitori per PMI e attività commerciali italiane.</div>
+        <div class="gc-footer-social">
+          <a href="https://www.facebook.com/gemmaconsulenze" target="_blank" class="fb" title="Facebook LoVenezia"><i class="ti ti-brand-facebook"></i></a>
+          <a href="https://wa.me/393247972328" target="_blank" class="wa" title="WhatsApp"><i class="ti ti-brand-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="gc-footer-cols">
+        <div class="gc-footer-col">
+          <h5>Navigazione</h5>
+          <a href="#servizi">Servizi</a>
+          <a href="#come-lavoro">Come lavoro</a>
+          <a href="#chi-siamo">Chi sono</a>
+          <a href="#lovenezia">LoVenezia</a>
+          <a href="#contatti">Contatti</a>
+        </div>
+        <div class="gc-footer-col">
+          <h5>Legale</h5>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Cookie Policy</a>
+          <a href="https://www.lovenezia.com" target="_blank" class="lv-link">LoVenezia →</a>
+        </div>
+        <div class="gc-footer-col">
+          <h5>Contatti</h5>
+          <p>info@gemmaconsulenze.com</p>
+          <p>324 797 2328</p>
+          <p style="margin-top:0.5rem;font-size:10px;color:var(--ink-faint);letter-spacing:0.5px;">Prima call gratuita e senza impegno</p>
+        </div>
+      </div>
+    </div>
+    <div class="gc-footer-bottom">
+      <span class="gc-footer-copy">© 2026 Gemma Consulenze di Porceddu Diego — P.IVA 05070270235 — Tutti i diritti riservati</span>
+      <span class="gc-footer-copy" style="font-size:9px;opacity:0.5;margin-top:6px;display:block;">Consulente acquisti e costi · PMI · Hotel · Ristoranti · Operativo in tutta Italia da remoto</span>
+    </div>
+  </footer>
+
+  <script>
+    const bar = document.getElementById('stickyBar');
+    window.addEventListener('scroll', () => {
+      bar.classList.toggle('visible', window.scrollY > 300);
+    }, { passive: true });
+
+    // EmailJS init (dopo defer)
+    document.addEventListener("DOMContentLoaded", function() {
+      if(typeof emailjs !== "undefined") emailjs.init({ publicKey: "YOUR_PUBLIC_KEY" });
+    });
+
+    // Intersection Observer per fade-in sezioni e card
+    const fadeEls = document.querySelectorAll(
+      '.gc-section, .gc-section-alt, .gc-section-dark, .gc-service, .gc-step, .gc-punto, .gc-perchi-col'
+    );
+    const fadeObs = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('visible'), i * 60);
+          fadeObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    fadeEls.forEach(el => fadeObs.observe(el));
+
+    function gcSubmitForm() {
+      const nome    = document.getElementById('gc-nome').value.trim();
+      const cognome = document.getElementById('gc-cognome').value.trim();
+      const email   = document.getElementById('gc-email').value.trim();
+      const tel     = document.getElementById('gc-tel').value.trim();
+      const azienda = document.getElementById('gc-azienda').value.trim();
+      const settore = document.getElementById('gc-settore').value.trim();
+      const msg     = document.getElementById('gc-msg').value.trim();
+      const privacy = document.getElementById('gc-privacy').checked;
+
+      // Honeypot check
+      if (document.getElementById('gc-website').value) return;
+      const azienda2 = document.getElementById('gc-azienda').value.trim();
+      const settore2  = document.getElementById('gc-settore').value.trim();
+      if (!nome || !email || !azienda2 || !settore2 || !msg) {
+        alert('Compila tutti i campi obbligatori: nome, email, azienda, tipologia attività e messaggio.');
+        return;
+      }
+      if (!privacy) {
+        alert('Accetta la Privacy Policy per procedere.');
+        return;
+      }
+
+      const btn = document.querySelector('#gc-form-area button');
+      btn.disabled = true;
+      btn.textContent = 'Invio in corso…';
+
+      emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', {
+        from_name:  nome + ' ' + cognome,
+        from_email: email,
+        phone:      tel || '—',
+        company:    azienda || '—',
+        sector:     settore || '—',
+        vat:        (document.getElementById('gc-piva')?.value.trim()) || '—',
+        message:    msg,
+        to_email:   'info@gemmaconsulenze.com'
+      })
+      .then(function() {
+        document.getElementById('gc-form-area').style.display = 'none';
+        document.getElementById('gc-form-success').style.display = 'block';
+      })
+      .catch(function(err) {
+        btn.disabled = false;
+        btn.textContent = 'Invia il messaggio';
+        alert('Invio non riuscito. Puoi scrivermi direttamente a info@gemmaconsulenze.com');
+        console.error('EmailJS error:', err);
+      });
+    }
+  </script>
+
+</body>
+</html>
