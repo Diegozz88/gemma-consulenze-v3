@@ -995,7 +995,7 @@
     <h2 class="gc-h2">Vediamo dove stai perdendo margine.</h2>
     <div class="gc-contact-grid">
       <div>
-        <p class="gc-lead">Non è necessario avere le idee chiare su cosa serve. Raccontaci la situazione — anche in modo informale. Spesso è proprio dalla conversazione che emerge dove si può intervenire.</p>
+        <p class="gc-lead">Non è necessario avere le idee chiare su cosa serve. Raccontami la situazione — anche in modo informale. Spesso è proprio dalla conversazione che emerge dove si può intervenire.</p>
         <p style="font-size:13px;color:var(--cream-dim);line-height:1.8;margin-top:1.25rem;font-weight:300;">La <strong style="color:var(--gold);font-weight:400;">prima call è gratuita</strong>: una conversazione esplorativa per capire insieme se e dove posso aiutarti. Nessun impegno, nessuna analisi da fare in anticipo.</p>
         <button class="btn-gold" style="margin-top:2.5rem;" onclick="window.location.href='mailto:info@gemmaconsulenze.com'">Scrivici per email</button>
       </div>
@@ -1159,7 +1159,7 @@
 
     // EmailJS init (dopo defer)
     document.addEventListener("DOMContentLoaded", function() {
-      if(typeof emailjs !== "undefined") emailjs.init({ publicKey: "YOUR_PUBLIC_KEY" });
+      if(typeof emailjs !== "undefined") emailjs.init({ publicKey: "6ly3cDXoV9UHuInJE" });
     });
 
     // Intersection Observer per fade-in sezioni e card
@@ -1203,7 +1203,7 @@
       btn.disabled = true;
       btn.textContent = 'Invio in corso…';
 
-      emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', {
+     +
         from_name:  nome + ' ' + cognome,
         from_email: email,
         phone:      tel || '—',
